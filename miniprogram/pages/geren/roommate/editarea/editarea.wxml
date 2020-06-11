@@ -1,0 +1,30 @@
+<!--miniprogram/pages/editarea/editarea.wxml-->
+<view class='area'>
+<text class="tip" hidden='{{pic_onshow_flag}}'>{{tip_del}}</text>
+<button  disabled="{{subdisabled}}" class="btn_submit" type="primary" size="mini" bindtap="submit" style="background-color:rgba(21, 129, 39, 0.575);">提交</button>
+
+<view class="zhezao" hidden="{{pic_onshow_flag}}" bindtap="off_show">
+  <image class="on_show" wx:if="{{on_show_src}}" src="{{on_show_src}}" hidden="{{pic_onshow_flag}}" bindload="image_on_show" id="{{on_show_id}}" bindlongtap='pic_del' style="width:{{image_width}}rpx; height:{{image_height}}rpx;"></image>
+</view>
+ <view class="input_title" hidden="{{all_pics_flag}}">
+   <view class="block"></view>
+   <view class="block"></view>
+   <input class="title" placeholder='请输入标题' value="{{evaTitle}}"bindblur="tit_chaChange" maxlength='15'></input>
+   <view class="block"></view>
+  </view>
+<view class="content" hidden="{{ctn_flag}}">
+<view class="block"></view>
+<view class="block"></view>
+  <view class="input_content" style='margin-top:{{ctn_mar}}rpx;'>
+   <textarea name="evaContent" maxlength="500" value="{{evaContent}}" rows="30" cols="50" placeholder="请输入内容{{evaContent_plcholdr}}" bindinput="ctn_charChange" /> 
+  </view>          
+  <view class="block"></view>
+</view>
+<view class="all_pics" hidden="{{all_pics_flag}}">
+  <view class="pic" wx:if="{{img.src}}"  wx:for="{{imgs}}"  wx:for-item="img" wx:for-index="no"   wx:key="default" id="{{no}}" data-src="{{img.src}}" bindtap='pic_bind'>
+   <image class="bypics"  src='{{img.src}}'></image>
+ </view>
+  
+</view>
+<button type="primary" class="choose_image" style="background-color:#ACC0D8;color:#696969"bindtap="choose_image" hidden='{{all_pics_flag}}'>选择照片</button> 
+</view>

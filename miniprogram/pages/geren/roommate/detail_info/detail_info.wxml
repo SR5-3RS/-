@@ -1,0 +1,34 @@
+<!--miniprogram/pages/detail_info/detail_info.wxml-->
+<view class='area'>
+<view class="zhezao" hidden="{{flag}}" bindtap="off_show">
+  <image class="on_show" wx:if="{{on_show_src}}" src="{{on_show_src}}" hidden="{{flag}}" bindload="image_on_show" style="width:{{image_width}}rpx; height:{{image_height}}rpx;"></image>
+</view>
+
+
+<view class="username" hidden='{{rvs_flag}}'>{{username}}:</view>
+<view style="color:black;text-align:center;font-size:25px" hidden='{{rvs_flag}}'>{{title}}</view>
+<view class='tcon' hidden='{{rvs_flag}}'><view class="textarea" disabled='true' style="color:#696969;">{{main}}</view>
+
+<view class="block"></view>
+<view class="block"></view>
+<view class="block"></view>
+
+<view class="all_pics" hidden='{{rvs_flag}}'>
+  <view class="pic" wx:if='{{pic_file.src}}' wx:for="{{pic_file}}" wx:key="default" bindtap='pic_bind' id="{{item}}">
+    <image  class="bypics" src="{{item}}"></image>
+  </view>
+</view>
+  <view class="depart_line"></view>
+
+  <view class="comment_start">评论：</view>
+  <view class="comment" wx:for="{{cmt_data}}" wx:for-item="cmt" wx:for-index="no" wx:key="{{cmt_id}}" id="{{cmt.cmt_id}}">
+    <view class="author">{{cmt.name}} :</view>
+    <view class="comm_txt">{{cmt.message}}</view>
+    <view class="comm_time">{{cmt.time}}</view>
+    <view class="depart_line"></view>
+  </view>
+  </view>
+  </view>
+  <view class="buttom_bar">
+    <view class="buttom_bar_reply" bindtap='buttom_bar_reply'>回复</view>
+  </view>

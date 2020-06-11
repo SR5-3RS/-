@@ -1,0 +1,9 @@
+<!--miniprogram/pages/comment/comment.wxml-->
+<view class='area'>
+<button  disabled="{{subdisabled}}" class="btn_submit" type="primary" size="mini" bindtap="submit">提交</button>
+<view class="content" hidden="{{ctn_flag}}">
+  <view class="input_content" style='margin-top:70rpx;'>
+   <textarea name="evaContent" maxlength="500" value="{{evaContent}}" class="weui-textarea" placeholder="请输入{{evaContent_plcholdr}}" bindblur="ctn_charChange" auto-height style='width:600rpx;'/> 
+</view>          
+</view> 
+</view>

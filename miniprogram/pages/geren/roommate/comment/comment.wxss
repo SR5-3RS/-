@@ -1,0 +1,10 @@
+/* miniprogram/pages/comment/comment.wxss */
+@import "../editarea/editarea.wxss";
+.area{
+  background-color: white;
+  width:90%;
+  height:90%;
+  right:5%;
+  top:5%;
+  position:absolute;
+}

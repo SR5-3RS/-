@@ -1,0 +1,15 @@
+<!--miniprogram/pages/u/oo.wxml-->
+  <view class='container'></view>
+ <view class="tiezi1"  bindtap='tie_bind' wx:for="{{record}}"  wx:for-item="tie" wx:for-index="no"   wx:key="tie_id" id="{{tie._id}}">
+   <view class='button_delete' bindtap='remove'  hidden='{{delete_flag}}'>删除</view>
+   <view class="tie_title" >{{tie.name}} :{{tie.title}}</view>
+   <view class="tie_brf">{{tie.message}}</view> 
+   <view class="tie_time">{{tie.time}}</view>
+  </view>
+  
+ 
+<view class="buttom_bar">
+<view class="buttom_bar_reply" bindtap='buttom_bar_reply'>发表</view>
+
+<view class="buttom_bar_mine" bindtap='buttom_bar_mine'>{{judge}}</view>
+</view>

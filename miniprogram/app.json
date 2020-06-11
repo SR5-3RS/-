@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/jiaju/jiaju/jiaju",
+    "pages/jiaju/kongTiao/kongTiao",
+    "pages/jiaju/deng/deng",
+    "pages/jiaju/penZai/penZai",
+    "pages/jiaju/chuangHu/chuangHu",
+    "pages/geren/geren/geren",
+    "pages/geren/AI/AI",
+    "pages/geren/shiPu/shiPu",
+    "pages/geren/riJi/riJi",
+    "pages/geren/riJi/bianJi/bianJi",
+    "pages/geren/riJi/xiugai/xiugai",
+    "pages/geren/riJi/chakan/chakan",
+    "pages/geren/roommate/roommate/oo",
+    "pages/geren/roommate/comment/comment",
+    "pages/geren/roommate/detail_info/detail_info",
+    "pages/geren/roommate/editarea/editarea",
+    "pages/geren/duShu/readBook/readBook"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "安居",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

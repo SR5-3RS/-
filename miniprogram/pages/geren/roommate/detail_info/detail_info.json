@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "backgroundColor": " rgba(0, 62, 196, 0.24)",
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "详情"
+}

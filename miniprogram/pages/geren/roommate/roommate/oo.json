@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "找室友",
+  "usingComponents": {},
+  "enablePullDownRefresh": true,
+  "backgroundColor": " rgba(0, 62, 196, 0.24)",
+  "onReachBottomDistance": 50
+
+}
